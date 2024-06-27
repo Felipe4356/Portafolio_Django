@@ -1,0 +1,21 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2>Contacta con nosotros</h2>
+    <form method="POST" class="needs-validation" novalidate>
+        {%csrf_token%}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">enviar</button>
+
+
+
+
+
+    </form>
+
+
+</div>
+    
+    {% endblock %}

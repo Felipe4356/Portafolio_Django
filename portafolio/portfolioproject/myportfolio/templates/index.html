@@ -1,0 +1,320 @@
+{% load static %}
+{% load bootstrap5 %}
+
+<!-- activar django desde portafolio y despues arranacar desde portfolioproject -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icono de pestañana -->
+    <link rel="icon" href="{% static 'images/logo.jpg' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <!-- bootstrap 5.3 -->
+
+   {% bootstrap_css %}
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/redes.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>FG_PORTAFOLIO</title>
+</head>
+
+<body class="hidden">
+
+    <!-- preloader -->
+    <div id="prelod" class="preloader">
+        <div class="loader " id="onload">
+            <div class="glitch" data-glitch="Loading...">Loading...</div>
+
+        </div>
+
+    </div>
+    <!-- barra de navegacion -->
+    <header>
+        <nav class="navbar   navbar-expand-lg bar_menu  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="{% static 'images/logo.jpg' %}" alt=""
+                        width="50px"></a>
+                <h class="text-white"> Portafolio</h>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link op" aria-current="page" href="#inicio">inicio</a>
+                        <a class="nav-link op" href="#sobre_mi">sobre mi</a>
+                        <a class="nav-link op" href="#portafolio">portafolio</a>
+                        <a class="nav-link op" href="#Contacto">contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- presentacion de mi portafolio  -->
+    <section id="inicio">
+        <div class="container  contai_1 py-5">
+              
+            <div class="text">
+                
+                <h3  class="text presentacion" >Bienvenidos</h3>
+                
+                <h1>Hola soy <span >Felipe Godoy</span> </h1>
+                
+                <p>Estudiante de segudo año en DUOC UC Desarrolador Web y Escritorio</p>
+                <ul class="wrapper">
+                    <a class="redes" href="https://www.facebook.com/?locale=es_LA">
+                        <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+                        </li>
+                    </a>
+        
+                    <a class="redes" href="https://twitter.com/?logout=1715703326248 ">
+                        <li class="icon twitter">
+                            <span class="tooltip">@felipe_123</span>
+                            <svg height="1.8em" fill="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                                class="twitter">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                </path>
+                            </svg>
+                        </li>
+                    </a>
+        
+        
+        
+                    <a class="redes" href="https://www.instagram.com/">
+                        <li class="icon instagram">
+                            <span class="tooltip">@felipe</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                </path>
+                            </svg>
+                        </li>
+        
+        
+                    </a>
+        
+                    <a class="redes" href="https://github.com/Felipe4356">
+                        <li class="icon github">
+                            <span class="tooltip">felipe4356</span>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
+                                viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                </path>
+                            </svg>
+                        </li>
+                    </a>
+                    
+                </ul>
+              
+                <a href="{% static 'CV/cv.pdf'%}" download="CV_Felipe_Godoy.pdf" class="btn btn-info py-">Descargar cv <i class="fa-solid fa-download"></i></a>
+
+            </div>
+          <br><br><br><br><br>
+            
+           
+        </div>
+     
+        
+       
+        
+          
+    </section>
+
+    <section id="sobre_mi" class="py-5">
+        <br>
+        <br>
+        
+        
+        <div class="container  contai_3  " style="">
+           
+            <div class="row">
+                <div class="col-12 ">
+                    <h1 class="text-center ">Sobre mi</h1>
+                    <hr>
+                    <p class="text_sobremi " >Estoy cursando mi segundor año en Ingeniería en Informática en Duoc UC.
+                        Lo que destaco en mis habilidades son mi capacidad para trabajar en equipo, mi creatividad y
+                        compromiso en el cumplimiento de metas y tareas. Me considero una persona responsable y
+                        dedicado a mis objetivos.</p>
+
+                    
+
+
+                    <div class="habilidades"></div>
+                    <h2 class="text-center">Mis habilidades</h2>
+                    <i class="fa-brands fa-python icono1"></i>
+                    <i class="fa-brands fa-java icono2"></i>
+                    <i class="fa-brands fa-html5 icono3"></i>
+                    <br>
+                    <br>
+                    <div class="progress py" role="progressbar" aria-label="Success example" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 40%">Python 40%</div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width: 56%">Java 56%</div>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width: 60%">Html 60%</div>
+                    </div>
+
+                    
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- sobre mi -->
+
+    <section id="sobre_mi" class="py-5">
+        <br>
+        <div class="container contai_4">
+
+        
+            <div class="row g-4 ">
+                <h2 class="text-center">Mis proyectos</h2>
+              {% for proyecto in proyectos %}
+      
+              <div class="col" >
+      
+                <div class="card h-100 mx-auto" style="width: 16rem;">
+      
+                  <img src="{{ proyecto.imagen.url }}" class="card-img-top" alt="{{ proyecto.titulo }}" >
+      
+                  <div class="card-body">
+      
+                    <h5 class="card-title">{{ proyecto.titulo }}</h5>
+      
+                    <p class="card-text">{{ proyecto.descripcion }}</p>
+                    
+                    <a href="{{ proyecto.link_sitio }}" class="btn btn-sm  m-1 btn-primary" target="_blank">Web</a>
+      
+                    <a href="{{ proyecto.link_repositorio }}" class="btn btn-sm m-1 btn-secondary" target="_blank">Repositorio</a>
+                    
+                    <a href="{% url 'proyecto_detalle' proyecto.pk %}" class="btn btn-sm m-1 btn-info">Ver Detalle</a> <!-- Nuevo botón -->
+                  </div>
+      
+                </div>
+      
+              </div>
+      
+              {% endfor %}
+      
+            </div>
+      
+          </div>
+    </section>
+
+    <section id="Contacto" class="py-4">
+        <br>
+        <br>
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col md-6">
+
+                    <h2 class="text-center conctacto">Contacto</h2>
+                    <hr>
+                    <br>
+                    <!-- formulario -->
+                    <form method="POST" action="{% url 'contacto_nuevo' %}" id="form" class="form">
+                        {% csrf_token %}
+                       
+                        <div class="field">
+                            <label for="nombre">Nombre</label>
+                            <input  type="nombre" class="form-control" name="nombre" id="nombre">
+                        </div>
+
+                        <div class="field">
+                            <label for="correo">Correo</label>
+                            <input type="email" class="form-control" name="email" id="correo">
+
+                        </div>
+                        <div class="field">
+                            <!-- <label for="telefono">Asunto</label> -->
+                            <!-- <input type="text" class="form-control" name="asunto" id="asunto"> -->
+                            <div class="field">
+                                <label for="mensaje">Mensaje</label>
+                                <input type="text" class="form-control" name="mensaje" id="mensaje">
+                            </div>
+                            <section class="bg-stars">
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                                <span class="star"></span>
+                            </section>
+
+                            <br>
+                            <br>
+
+                            <input type="submit" id="button" class=" btn btn-info" value="Enviar mensaje">
+                    </form>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!-- Footer container -->
+
+    <div class="container text-center">
+       
+        © Copyright 2024. felipe godoy. <br>Todos los derechos reservados
+    </div>
+
+
+
+
+
+    
+    <!-- JQuery -->
+    <script src="{% static 'js/jquery-3.7.1.min.js'%}"></script>
+    <!-- Scripts personalizados -->
+    <script src="{% static 'js/scripts.js'%}"></script>
+    <script src="{% static 'js/preloader.js'%}"></script>
+    <!-- <script  src="{% static 'js/form.js'%}"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('ko77cqybLaHp519_R')
+    </script>
+    {% bootstrap_javascript %}
+
+</body>
+
+</html>

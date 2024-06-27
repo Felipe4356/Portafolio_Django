@@ -1,0 +1,235 @@
+/* Importamos el archivo de las fuentes CSS para poder utilizarlas en nuestro proyecto solo con la propiedad font-family: ... */
+@import url('fonts.css');
+
+:root {
+  --color1: #03121c;
+  --color2: #050f1b;
+  --color4: #140736;
+  --color5: #558dff;
+  --color3: #F2F2F2;
+}
+
+.hidden{
+overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.preloader{
+  height: 100vh;
+  background-color: #03121c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color1);
+  color: var(--color3);
+}
+
+.bar_menu {
+  background: transparent;
+  border: 1px solid var(--color1);
+  backdrop-filter: blur(10px);
+}
+
+.op {
+  color: var(--color3);
+}
+
+#inicio {
+  background-image: url(https://img.freepik.com/vector-premium/fondo-pantalla-vectorial-ilustracion-stock-montanas-paisaje-nocturno_538866-45.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contai_1 {
+  text-align: center;
+}
+
+
+#sobre_mi {
+  background-color: var(--color1);
+  padding: 50px;
+}
+
+span {
+  color: rgb(0, 0, 0);
+}
+
+
+
+.presentacion {
+  padding-top: 47px;
+}
+
+.habilit {
+  padding: 50px;
+}
+
+.icono1,
+.icono2,
+.icono3 {
+  font-size: 50px;
+  margin: 0 3px;
+}
+
+.contai_3 {
+  left: 10%;
+  width: 60%;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  border: 3px solid var(--color3);
+  border-radius: 10px;
+  padding: 50px 20px;
+}
+
+.contai_4 {
+  text-align: center;
+}
+
+#mensaje {
+  padding: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contai_3 {
+    width: 80%;
+    left: 10%;
+  }
+
+  #sobre_mi {
+    background-color: var(--color1);
+    padding: 0px;
+    font-size: 10px;
+
+  }
+  .text_sobremi{
+  text-align: justify;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .contai_3 {
+    width: 80%;
+    left: 10%;
+  }
+  .presentacion {
+    padding-top: 500px;
+  }
+  .habilit {
+    padding: 30px;
+  }
+ 
+  .icono1,
+  .icono2,
+  .icono3 {
+    font-size: 30px;
+  }
+}
+
+.glitch {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+  animation: shift 1s ease-in-out infinite alternate;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #8b00ff;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #00e571;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-3px, 3px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  60% {
+    transform: translate(3px, 3px);
+  }
+
+  80% {
+    transform: translate(3px, -3px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes shift {
+  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
+}

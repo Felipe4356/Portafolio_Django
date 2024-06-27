@@ -1,0 +1,98 @@
+        /* Definir variables de colores en :root */
+:root {
+    --background-color: linear-gradient(to left, #141e30, #243b55);
+    --container-background: linear-gradient(to left, #0f2027, #2c5364);
+    --border-color: #00ffff;
+    --text-color: #fff;
+    --heading-color: #ffffff;
+    --label-color: #00ffff;
+    --input-border-color: #00ffff;
+    --input-background-color: #1e2a38;
+    --input-text-color: #fff;
+    --button-background-color: #00ffff;
+    --button-text-color: #000;
+    --button-hover-color: #00b3b3;
+    --error-color: #ff4c4c;
+    --muted-text-color: #6c757d;
+}
+
+/* General Styles */
+body {
+    background: var(--background-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: var(--container-background);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 10px var(--border-color);
+    color: var(--text-color);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: var(--label-color);
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: var(--input-background-color);
+    color: var(--input-text-color);
+}
+
+/* Button */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-background-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--button-text-color);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Error Messages */
+.invalid-feedback {
+    color: var(--error-color);
+    font-size: 14px;
+}
+
+.form-text.text-muted {
+    color: var(--muted-text-color);
+    font-size: 12px;
+}

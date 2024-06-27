@@ -1,0 +1,40 @@
+.project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .project-content-detail {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-technologies {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .project-links .btn {
+    margin-right: 10px;
+  }
+  
