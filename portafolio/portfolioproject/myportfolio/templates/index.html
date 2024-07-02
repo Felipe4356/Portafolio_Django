@@ -52,6 +52,7 @@
                         <a class="nav-link op" href="#sobre_mi">sobre mi</a>
                         <a class="nav-link op" href="#portafolio">portafolio</a>
                         <a class="nav-link op" href="#Contacto">contacto</a>
+
                     </div>
                 </div>
             </div>
@@ -147,7 +148,7 @@
         <br>
         
         
-        <div class="container  contai_3  " style="">
+        <div class="container  contai_3  " >
            
             <div class="row">
                 <div class="col-12 ">
@@ -255,12 +256,12 @@
                        
                         <div class="field">
                             <label for="nombre">Nombre</label>
-                            <input  type="nombre" class="form-control" name="nombre" id="nombre">
+                            <input  type="nombre" class="form-control" name="nombre" id="nombre" required>
                         </div>
 
                         <div class="field">
                             <label for="correo">Correo</label>
-                            <input type="email" class="form-control" name="email" id="correo">
+                            <input type="email" class="form-control" name="email" id="correo" required>
 
                         </div>
                         <div class="field">
@@ -268,7 +269,7 @@
                             <!-- <input type="text" class="form-control" name="asunto" id="asunto"> -->
                             <div class="field">
                                 <label for="mensaje">Mensaje</label>
-                                <input type="text" class="form-control" name="mensaje" id="mensaje">
+                                <input type="text" class="form-control" name="mensaje" id="mensaje" required>
                             </div>
                             <section class="bg-stars">
                                 <span class="star"></span>
@@ -279,8 +280,10 @@
 
                             <br>
                             <br>
+                            <!-- agregar excepcion que tienes rellenar  -->
 
-                            <input type="submit" id="button" class=" btn btn-info" value="Enviar mensaje">
+                           
+                            <input type="submit" id="button" class=" btn btn-info" value="Enviar mensaje" >
                     </form>
 
                     </p>

@@ -1,3 +1,23 @@
+body{
+background-color: #19273B ;
+color: #f9f9f9;
+}
+
+nav{
+    background-color: #03121C;
+    padding: 10px 0;
+    
+   
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 2%;
+}
+
+
+
 .project-header {
     display: flex;
     flex-direction: column;
@@ -7,15 +27,25 @@
   .project-title {
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: le;
   }
   
   .project-image {
-    max-width: 100%;
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+  
+    max-width: 60%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 6px solid rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgb(52, 127, 175);
   }
+   
+
+
+  
   
   .project-description {
     font-size: 1.1rem;
@@ -23,15 +53,19 @@
   }
   
   .project-content-detail {
-    background-color: #f9f9f9;
-    padding: 15px;
+    background-color: #ffffff;
+    padding: 45px;
+    color: rgb(0, 0, 0);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 6px solid rgb(26, 171, 190);
+    box-shadow: 0 0 5px blue;
+    box-shadow: 0 2px 4px rgba(237, 44, 44, 0.1);
   }
   
   .project-technologies {
     font-size: 1rem;
-    color: #555;
+    color: #ffffff;
   }
   
   .project-links .btn {
