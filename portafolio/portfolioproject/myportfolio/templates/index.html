@@ -218,7 +218,7 @@
       
                   <div class="card-body">
       
-                    <h5 class="card-title">{{ proyecto.titulo }}</h5>
+                    <h5 class="card-title">{{ producto.nombre }}</h5>
       
                     <p class="card-text">{{ proyecto.descripcion }}</p>
                     
@@ -265,8 +265,6 @@
 
                         </div>
                         <div class="field">
-                            <!-- <label for="telefono">Asunto</label> -->
-                            <!-- <input type="text" class="form-control" name="asunto" id="asunto"> -->
                             <div class="field">
                                 <label for="mensaje">Mensaje</label>
                                 <input type="text" class="form-control" name="mensaje" id="mensaje" required>
@@ -280,7 +278,7 @@
 
                             <br>
                             <br>
-                            <!-- agregar excepcion que tienes rellenar  -->
+                            
 
                            
                             <input type="submit" id="button" class=" btn btn-info" value="Enviar mensaje" >
@@ -310,7 +308,7 @@
     <!-- Scripts personalizados -->
     <script src="{% static 'js/scripts.js'%}"></script>
     <script src="{% static 'js/preloader.js'%}"></script>
-    <!-- <script  src="{% static 'js/form.js'%}"></script> -->
+    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script type="text/javascript">
